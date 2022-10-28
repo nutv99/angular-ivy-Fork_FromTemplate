@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule, Routes } from '@angular/router';
 
+import {TableModule} from 'primeng/table';
+
 import { AppComponent } from './app.component';
 import { Tabledata1Component } from './shared/components/tabledata1/tabledata1.component';
 import { HelloComponent } from './hello.component';
@@ -26,7 +28,7 @@ const appRoutes: Routes = [
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,FontAwesomeModule,HttpClientModule,
+  imports:      [ BrowserModule, FormsModule,FontAwesomeModule,HttpClientModule,TableModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only set true
